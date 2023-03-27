@@ -1,0 +1,17 @@
+C:\Users\Filya\source\repos\lab_4-2_OOP\lab_4-2_OOP\bin\Debug\net6.0-windows\lab_4-2_OOP.exe
+C:\Users\Filya\source\repos\lab_4-2_OOP\lab_4-2_OOP\bin\Debug\net6.0-windows\lab_4-2_OOP.deps.json
+C:\Users\Filya\source\repos\lab_4-2_OOP\lab_4-2_OOP\bin\Debug\net6.0-windows\lab_4-2_OOP.runtimeconfig.json
+C:\Users\Filya\source\repos\lab_4-2_OOP\lab_4-2_OOP\bin\Debug\net6.0-windows\lab_4-2_OOP.dll
+C:\Users\Filya\source\repos\lab_4-2_OOP\lab_4-2_OOP\bin\Debug\net6.0-windows\lab_4-2_OOP.pdb
+C:\Users\Filya\source\repos\lab_4-2_OOP\lab_4-2_OOP\obj\Debug\net6.0-windows\lab_4-2_OOP.csproj.AssemblyReference.cache
+C:\Users\Filya\source\repos\lab_4-2_OOP\lab_4-2_OOP\obj\Debug\net6.0-windows\lab_4_2_OOP.Form1.resources
+C:\Users\Filya\source\repos\lab_4-2_OOP\lab_4-2_OOP\obj\Debug\net6.0-windows\lab_4-2_OOP.csproj.GenerateResource.cache
+C:\Users\Filya\source\repos\lab_4-2_OOP\lab_4-2_OOP\obj\Debug\net6.0-windows\lab_4-2_OOP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Filya\source\repos\lab_4-2_OOP\lab_4-2_OOP\obj\Debug\net6.0-windows\lab_4-2_OOP.AssemblyInfoInputs.cache
+C:\Users\Filya\source\repos\lab_4-2_OOP\lab_4-2_OOP\obj\Debug\net6.0-windows\lab_4-2_OOP.AssemblyInfo.cs
+C:\Users\Filya\source\repos\lab_4-2_OOP\lab_4-2_OOP\obj\Debug\net6.0-windows\lab_4-2_OOP.csproj.CoreCompileInputs.cache
+C:\Users\Filya\source\repos\lab_4-2_OOP\lab_4-2_OOP\obj\Debug\net6.0-windows\lab_4-2_OOP.dll
+C:\Users\Filya\source\repos\lab_4-2_OOP\lab_4-2_OOP\obj\Debug\net6.0-windows\refint\lab_4-2_OOP.dll
+C:\Users\Filya\source\repos\lab_4-2_OOP\lab_4-2_OOP\obj\Debug\net6.0-windows\lab_4-2_OOP.pdb
+C:\Users\Filya\source\repos\lab_4-2_OOP\lab_4-2_OOP\obj\Debug\net6.0-windows\lab_4-2_OOP.genruntimeconfig.cache
+C:\Users\Filya\source\repos\lab_4-2_OOP\lab_4-2_OOP\obj\Debug\net6.0-windows\ref\lab_4-2_OOP.dll

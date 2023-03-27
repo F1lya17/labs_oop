@@ -1,0 +1,17 @@
+C:\Users\Filya\source\repos\lab_4-1_oop\lab_4-1_oop\bin\Debug\net6.0-windows\lab_4-1_oop.exe
+C:\Users\Filya\source\repos\lab_4-1_oop\lab_4-1_oop\bin\Debug\net6.0-windows\lab_4-1_oop.deps.json
+C:\Users\Filya\source\repos\lab_4-1_oop\lab_4-1_oop\bin\Debug\net6.0-windows\lab_4-1_oop.runtimeconfig.json
+C:\Users\Filya\source\repos\lab_4-1_oop\lab_4-1_oop\bin\Debug\net6.0-windows\lab_4-1_oop.dll
+C:\Users\Filya\source\repos\lab_4-1_oop\lab_4-1_oop\bin\Debug\net6.0-windows\lab_4-1_oop.pdb
+C:\Users\Filya\source\repos\lab_4-1_oop\lab_4-1_oop\obj\Debug\net6.0-windows\lab_4-1_oop.csproj.AssemblyReference.cache
+C:\Users\Filya\source\repos\lab_4-1_oop\lab_4-1_oop\obj\Debug\net6.0-windows\lab_4_1_oop.Form1.resources
+C:\Users\Filya\source\repos\lab_4-1_oop\lab_4-1_oop\obj\Debug\net6.0-windows\lab_4-1_oop.csproj.GenerateResource.cache
+C:\Users\Filya\source\repos\lab_4-1_oop\lab_4-1_oop\obj\Debug\net6.0-windows\lab_4-1_oop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Filya\source\repos\lab_4-1_oop\lab_4-1_oop\obj\Debug\net6.0-windows\lab_4-1_oop.AssemblyInfoInputs.cache
+C:\Users\Filya\source\repos\lab_4-1_oop\lab_4-1_oop\obj\Debug\net6.0-windows\lab_4-1_oop.AssemblyInfo.cs
+C:\Users\Filya\source\repos\lab_4-1_oop\lab_4-1_oop\obj\Debug\net6.0-windows\lab_4-1_oop.csproj.CoreCompileInputs.cache
+C:\Users\Filya\source\repos\lab_4-1_oop\lab_4-1_oop\obj\Debug\net6.0-windows\lab_4-1_oop.dll
+C:\Users\Filya\source\repos\lab_4-1_oop\lab_4-1_oop\obj\Debug\net6.0-windows\refint\lab_4-1_oop.dll
+C:\Users\Filya\source\repos\lab_4-1_oop\lab_4-1_oop\obj\Debug\net6.0-windows\lab_4-1_oop.pdb
+C:\Users\Filya\source\repos\lab_4-1_oop\lab_4-1_oop\obj\Debug\net6.0-windows\lab_4-1_oop.genruntimeconfig.cache
+C:\Users\Filya\source\repos\lab_4-1_oop\lab_4-1_oop\obj\Debug\net6.0-windows\ref\lab_4-1_oop.dll
