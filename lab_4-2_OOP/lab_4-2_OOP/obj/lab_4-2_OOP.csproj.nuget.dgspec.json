@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Filya\\Desktop\\Учёба(\\OOP\\lab_4-2_OOP\\lab_4-2_OOP\\lab_4-2_OOP.csproj": {}
+    "C:\\Users\\Filya\\Desktop\\OOP\\lab_4-2_OOP\\lab_4-2_OOP\\lab_4-2_OOP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Filya\\Desktop\\Учёба(\\OOP\\lab_4-2_OOP\\lab_4-2_OOP\\lab_4-2_OOP.csproj": {
+    "C:\\Users\\Filya\\Desktop\\OOP\\lab_4-2_OOP\\lab_4-2_OOP\\lab_4-2_OOP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Filya\\Desktop\\Учёба(\\OOP\\lab_4-2_OOP\\lab_4-2_OOP\\lab_4-2_OOP.csproj",
+        "projectUniqueName": "C:\\Users\\Filya\\Desktop\\OOP\\lab_4-2_OOP\\lab_4-2_OOP\\lab_4-2_OOP.csproj",
         "projectName": "lab_4-2_OOP",
-        "projectPath": "C:\\Users\\Filya\\Desktop\\Учёба(\\OOP\\lab_4-2_OOP\\lab_4-2_OOP\\lab_4-2_OOP.csproj",
+        "projectPath": "C:\\Users\\Filya\\Desktop\\OOP\\lab_4-2_OOP\\lab_4-2_OOP\\lab_4-2_OOP.csproj",
         "packagesPath": "C:\\Users\\Filya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Filya\\Desktop\\Учёба(\\OOP\\lab_4-2_OOP\\lab_4-2_OOP\\obj\\",
+        "outputPath": "C:\\Users\\Filya\\Desktop\\OOP\\lab_4-2_OOP\\lab_4-2_OOP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Filya\\AppData\\Roaming\\NuGet\\NuGet.Config",
