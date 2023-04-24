@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\Filya\Desktop\lab_5_OOP\lw5-part2\lw5-part2\main.cpp(61): warning C4172: возвращение адреса локальной или временной переменной : bs
+C:\Users\Filya\Desktop\lab_5_OOP\lw5-part2\lw5-part2\main.cpp(66): warning C4172: возвращение адреса локальной или временной переменной : bs
+  lw5-part2.vcxproj -> C:\Users\Filya\Desktop\lab_5_OOP\lw5-part2\x64\Debug\lw5-part2.exe
