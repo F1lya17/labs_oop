@@ -29,7 +29,7 @@ namespace lab_6
                     {
                         if (j != i && !isCtrlPressed)
                         {
-                            container[j].isSelected = false;
+                            container[j].SelectChange(false);
                         }
                     }
                     this.Refresh();
@@ -40,23 +40,32 @@ namespace lab_6
             if (figure == "Круг")
             {
                 Circle c = new Circle(e.X, e.Y, colorFill, figureSize);
-                container.pushBack(c);
+                if (c.isAvailableLocation(figureSize, this.ClientSize.Width, this.ClientSize.Height))
+                {
+                    container.pushBack(c);
+                }
             }
             else if (figure == "Квадрат")
             {
                 Square s = new Square(e.X, e.Y, colorFill, figureSize);
-                container.pushBack(s);
+                if (s.isAvailableLocation(figureSize, this.ClientSize.Width, this.ClientSize.Height))
+                {
+                    container.pushBack(s);
+                }
             }
             else if (figure == "Треугольник")
             {
                 Triangle t = new Triangle(e.X, e.Y, colorFill, figureSize);
-                container.pushBack(t);
+                if (t.isAvailableLocation(figureSize, this.ClientSize.Width, this.ClientSize.Height))
+                {
+                    container.pushBack(t);
+                }
             }
 
 
-            if (container.Count < 2)
+            if (container.Count == 1)
             {
-                container[0].isSelected = true;
+                container[0].SelectChange(true);
             }
             this.Refresh();
         }
@@ -83,7 +92,7 @@ namespace lab_6
                 }
                 if (container.Count > 0)
                 {
-                    container[0].isSelected = true;
+                    container[0].SelectChange(true);
                 }
             }
             if (e.KeyCode == Keys.ControlKey)
@@ -148,6 +157,17 @@ namespace lab_6
         private void sizeBar_ValueChanged(object sender, EventArgs e)
         {
             figureSize = sizeBar.Value;
+            for (int i = 0; i < container.Count; i++)
+            {
+                if (container[i].isSelected)
+                {
+                    if (container[i].isAvailableLocation(figureSize, this.ClientSize.Width, this.ClientSize.Height))
+                    {
+                        container[i].ScaleChange(figureSize);
+                    }
+                }
+            }
+            this.Refresh();
         }
 
         private void circleItem_Click(object sender, EventArgs e)
@@ -198,6 +218,14 @@ namespace lab_6
             {
                 colorDialog1.FullOpen = true;
                 colorFill = colorDialog1.Color;
+                for (int i = 0; i < container.Count; i++)
+                {
+                    if (container[i].isSelected)
+                    {
+                        container[i].ColorChange(colorFill);
+                    }
+                }
+                this.Refresh();
             }
         }
     }

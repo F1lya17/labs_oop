@@ -21,6 +21,12 @@ namespace lab_6.Figures
         abstract public bool isInArea(int X, int Y);
         abstract public bool isAvailableMoveX(int w, char s);
         abstract public bool isAvailableMoveY(int h, char s);
+        abstract public void ScaleChange(int newSize);
+        abstract public void ColorChange(Color newColor);
+        abstract public void SelectChange(bool isSelec);
+
+        abstract public bool isAvailableLocation(int size, int w, int h);
+
         public void move(int dx, int dy, int w, int h, char s)
         {
             if (isAvailableMoveX(w, s) && isAvailableMoveY(h, s))

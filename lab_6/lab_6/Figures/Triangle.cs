@@ -87,5 +87,27 @@ namespace lab_6.Figures
             }
             return false;
         }
+        public override void ScaleChange(int newSize)
+        {
+            this.size = newSize;
+        }
+
+        public override void ColorChange(Color newColor)
+        {
+            this.color = newColor;
+        }
+        public override void SelectChange(bool isSelec)
+        {
+            this.isSelected = isSelec;
+        }
+
+        public override bool isAvailableLocation(int size, int w, int h)
+        {
+            if (point2.X <= w && point3.X >= 0 && point3.Y <= h && point1.Y >= 55)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
