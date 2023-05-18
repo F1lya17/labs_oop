@@ -29,7 +29,7 @@ namespace lab_6.Figures
             point3 = new Point((int)(this.x - this.size * 0.5), (int)(this.y + this.radius * 0.5));
             if (isSelected)
             {
-                g.FillPolygon(Brushes.Red, new[] { point1, point2, point3, point1 });
+                g.FillPolygon(new SolidBrush(color), new[] { point1, point2, point3, point1 });
                 g.DrawLines(new Pen(Color.Black, 3), new[] { point1, point2, point3, point1 });
             }
             else
@@ -54,56 +54,10 @@ namespace lab_6.Figures
             }
             return false;
         }
-        public override bool isAvailableMoveX(int w, char s)
-        {
-            if (s == 'd' && point2.X + 4 < w)
-            {
-                return true;
-            }
-            else if (s == 'a' && point3.X - 4 > 0)
-            {
-                return true;
-            }
-            else if (s == 'w' || s == 's')
-            {
-                return true;
-            }
-            return false;
-        }
 
-        public override bool isAvailableMoveY(int h, char s)
+        public override bool isAvailableLocation(int size, int w, int h, int dx, int dy)
         {
-            if (s == 's' && point3.Y + 4 < h)
-            {
-                return true;
-            }
-            else if (s == 'w' && point1.Y - 4 >= 55)
-            {
-                return true;
-            }
-            else if (s == 'a' || s == 'd')
-            {
-                return true;
-            }
-            return false;
-        }
-        public override void ScaleChange(int newSize)
-        {
-            this.size = newSize;
-        }
-
-        public override void ColorChange(Color newColor)
-        {
-            this.color = newColor;
-        }
-        public override void SelectChange(bool isSelec)
-        {
-            this.isSelected = isSelec;
-        }
-
-        public override bool isAvailableLocation(int size, int w, int h)
-        {
-            if (point2.X <= w && point3.X >= 0 && point3.Y <= h && point1.Y >= 55)
+            if (point2.X + dx <= w && point3.X + dx >= 0 && point3.Y + dy <= h && point1.Y + dy >= 55)
             {
                 return true;
             }

@@ -6,7 +6,6 @@ namespace lab_6
     public partial class Form1 : Form
     {
         bool isCtrlPressed = false;
-        bool isCtrlAvailable = false;
         string figure = "Круг";
         Color colorFill = Color.Blue;
         int figureSize = 50;
@@ -14,7 +13,6 @@ namespace lab_6
         {
             InitializeComponent();
             circleItem.Checked = true;
-            noItem.Checked = true;
         }
 
         private void Form1_MouseClick(object sender, MouseEventArgs e)
@@ -40,7 +38,7 @@ namespace lab_6
             if (figure == "Круг")
             {
                 Circle c = new Circle(e.X, e.Y, colorFill, figureSize);
-                if (c.isAvailableLocation(figureSize, this.ClientSize.Width, this.ClientSize.Height))
+                if (c.isAvailableLocation(figureSize, this.ClientSize.Width, this.ClientSize.Height, 0, 0))
                 {
                     container.pushBack(c);
                 }
@@ -48,7 +46,7 @@ namespace lab_6
             else if (figure == "Квадрат")
             {
                 Square s = new Square(e.X, e.Y, colorFill, figureSize);
-                if (s.isAvailableLocation(figureSize, this.ClientSize.Width, this.ClientSize.Height))
+                if (s.isAvailableLocation(figureSize, this.ClientSize.Width, this.ClientSize.Height, 0, 0))
                 {
                     container.pushBack(s);
                 }
@@ -56,7 +54,7 @@ namespace lab_6
             else if (figure == "Треугольник")
             {
                 Triangle t = new Triangle(e.X, e.Y, colorFill, figureSize);
-                if (t.isAvailableLocation(figureSize, this.ClientSize.Width, this.ClientSize.Height))
+                if (t.isAvailableLocation(figureSize, this.ClientSize.Width, this.ClientSize.Height, 0, 0))
                 {
                     container.pushBack(t);
                 }
@@ -97,10 +95,7 @@ namespace lab_6
             }
             if (e.KeyCode == Keys.ControlKey)
             {
-                if (isCtrlAvailable)
-                {
-                    isCtrlPressed = true;
-                }
+                isCtrlPressed = true;
                 return;
             }
             if (e.KeyCode == Keys.W)
@@ -109,7 +104,7 @@ namespace lab_6
                 {
                     if (container[i].isSelected)
                     {
-                        container[i].move(0, -5, this.ClientSize.Width, this.ClientSize.Height, 'w');
+                        container[i].move(0, -5, this.ClientSize.Width, this.ClientSize.Height);
                     }
                 }
             }
@@ -119,7 +114,7 @@ namespace lab_6
                 {
                     if (container[i].isSelected)
                     {
-                        container[i].move(0, 5, this.ClientSize.Width, this.ClientSize.Height, 's');
+                        container[i].move(0, 5, this.ClientSize.Width, this.ClientSize.Height);
                     }
                 }
             }
@@ -129,7 +124,7 @@ namespace lab_6
                 {
                     if (container[i].isSelected)
                     {
-                        container[i].move(-5, 0, this.ClientSize.Width, this.ClientSize.Height, 'a');
+                        container[i].move(-5, 0, this.ClientSize.Width, this.ClientSize.Height);
                     }
                 }
             }
@@ -139,7 +134,7 @@ namespace lab_6
                 {
                     if (container[i].isSelected)
                     {
-                        container[i].move(5, 0, this.ClientSize.Width, this.ClientSize.Height, 'd');
+                        container[i].move(5, 0, this.ClientSize.Width, this.ClientSize.Height);
                     }
                 }
             }
@@ -161,7 +156,7 @@ namespace lab_6
             {
                 if (container[i].isSelected)
                 {
-                    if (container[i].isAvailableLocation(figureSize, this.ClientSize.Width, this.ClientSize.Height))
+                    if (container[i].isAvailableLocation(figureSize, this.ClientSize.Width, this.ClientSize.Height, 0, 0))
                     {
                         container[i].ScaleChange(figureSize);
                     }
@@ -192,20 +187,6 @@ namespace lab_6
             squareItem.Checked = true;
             triangleItem.Checked = false;
             figure = "Квадрат";
-        }
-
-        private void yesItem_Click(object sender, EventArgs e)
-        {
-            isCtrlAvailable = true;
-            yesItem.Checked = true;
-            noItem.Checked = false;
-        }
-
-        private void noItem_Click(object sender, EventArgs e)
-        {
-            isCtrlAvailable = false;
-            yesItem.Checked = false;
-            noItem.Checked = true;
         }
 
         private void chColor_Click(object sender, EventArgs e)

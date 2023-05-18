@@ -15,8 +15,8 @@ namespace lab_6.Figures
             Graphics g = e.Graphics;
             if (isSelected)
             {
-                g.FillEllipse(Brushes.Red, x - size / 2, y - size / 2, this.size, this.size);
-                g.DrawEllipse(new Pen(Color.Black), x - size / 2, y - size / 2, this.size, this.size);
+                g.FillEllipse(new SolidBrush(color), x - size / 2, y - size / 2, this.size, this.size);
+                g.DrawEllipse(new Pen(Color.Black, 3), x - size / 2, y - size / 2, this.size, this.size);
                 
             }
             else
@@ -34,57 +34,9 @@ namespace lab_6.Figures
             return false;
         }
 
-        public override bool isAvailableMoveX(int w, char s)
+        public override bool isAvailableLocation(int size, int w, int h, int dx, int dy)
         {
-            if (s == 'd' && this.x + this.size / 2 + 4 < w)
-            {
-                return true;
-            }
-            else if (s == 'a' && this.x - this.size / 2 - 4 > 0)
-            {
-                return true;
-            }
-            else if (s == 'w' || s == 's')
-            {
-                return true;
-            }
-            return false;
-        }
-
-        public override bool isAvailableMoveY(int h, char s)
-        {
-            if (s == 's' && this.y + this.size / 2 + 4 < h)
-            {
-                return true;
-            }
-            else if (s == 'w' && this.y - this.size / 2 - 4 >= 55)
-            {
-                return true;
-            }
-            else if (s == 'a' || s == 'd')
-            {
-                return true;
-            }
-            return false;
-        }
-        public override void ScaleChange(int newSize)
-        {
-            this.size = newSize;
-        }
-
-        public override void ColorChange(Color newColor)
-        {
-            this.color = newColor;
-        }
-
-        public override void SelectChange(bool isSelec)
-        {
-            this.isSelected = isSelec;
-        }
-
-        public override bool isAvailableLocation(int size, int w, int h)
-        {
-            if (this.y + size / 2 <= h && this.y - size / 2 >= 55 && this.x + size / 2 < w && this.x - size / 2 > 0)
+            if (this.y + size / 2 + dy <= h && this.y - size / 2 + dy >= 55 && this.x + size / 2 + dx < w && this.x - size / 2 + dx > 0)
             {
                 return true;
             }

@@ -19,17 +19,22 @@ namespace lab_6.Figures
         public Figure(int x, int y, Color color, int size) { this.x = x; this.y = y; this.color = color; this.size = size; }
         abstract public void draw(PaintEventArgs e);
         abstract public bool isInArea(int X, int Y);
-        abstract public bool isAvailableMoveX(int w, char s);
-        abstract public bool isAvailableMoveY(int h, char s);
-        abstract public void ScaleChange(int newSize);
-        abstract public void ColorChange(Color newColor);
-        abstract public void SelectChange(bool isSelec);
-
-        abstract public bool isAvailableLocation(int size, int w, int h);
-
-        public void move(int dx, int dy, int w, int h, char s)
+        abstract public bool isAvailableLocation(int size, int w, int h, int dx, int dy);
+        public void ScaleChange(int newSize)
         {
-            if (isAvailableMoveX(w, s) && isAvailableMoveY(h, s))
+            this.size = newSize;
+        }
+        public void ColorChange(Color newColor)
+        {
+            this.color = newColor;
+        }
+        public void SelectChange(bool isSelec)
+        {
+            this.isSelected = isSelec;
+        }
+        public void move(int dx, int dy, int w, int h)
+        {
+            if (isAvailableLocation(this.size, w, h, dx, dy))
             {
                 this.x += dx;
                 this.y += dy;
